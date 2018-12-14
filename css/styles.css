@@ -4,7 +4,7 @@ body{
 #leftSide{
   background-color: #e6f2ff;
   height: 500px;
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -12,7 +12,7 @@ body{
 #rightSide{
   background-color: #e6fff7;
   height:500px;
-  margin-top: 50px;
+  margin-top: 100px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -32,16 +32,26 @@ body{
 }
 
 #btnNew {
-  margin-bottom: 250px;
+  margin-bottom: 85px;
   margin-top: 20px;
 }
 
 #btnRoll {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 85px;
 }
 
 #btnScore {
   position: absolute;
   top: 400px;
   left: 200px;
+}
+#btnHold {
+  margin-bottom: 5px;
+}
+#btnRules {
+  margin-top: 55px;
+}
+#leftSide p, #rightSide p {
+  padding-top: 50px;
 }
