@@ -3,7 +3,45 @@ body{
 }
 #leftSide{
   background-color: #e6f2ff;
+  height: 500px;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
 }
 #rightSide{
   background-color: #e6fff7;
+  height:500px;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+#rules{
+  display: none;
+}
+
+.mid {
+  display: inline-block;
+  text-align: center;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 600px;
+}
+
+#btnNew {
+  margin-bottom: 250px;
+  margin-top: 20px;
+}
+
+#btnRoll {
+  margin-bottom: 30px;
+}
+
+#btnScore {
+  position: absolute;
+  top: 400px;
+  left: 200px;
 }
