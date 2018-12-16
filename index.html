@@ -14,43 +14,30 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-6" id="leftSide">
-        <p> PLAYER 1</P>
-        <div id="totalPoints" id="rSidePoints">TOTAL POINTS</div>
-        <div id="btnScore" id="rSide">CURRENT SCORE</div>
+      <div id="playGame">
+        <div class="col-md-6" id="leftSide">
+          <div id="player-1">PLAYER 1</div>
+          <div id="totalPoints" id="rSidePoints">0</div>
+          <div id="btnScore-1" id="score-1" id="rSide">0</div>
 
+        </div>
+
+        <div class="col-md-6" id="rightSide">
+          <div id="player-2">PLAYER 2</div>
+          <div id="totalPoints" id="lSidePoints">0</div>
+          <div id="btnScore-2" id="score-2" id="lSide">0</div>
+        </div>
+
+        <div class="mid" id="mid">
+          <div><button class="btn btn-primary top-btn" id="btnRules"><a href="rules.html">RULES</a></button></div>
+          <!-- <button class="btn btn-primary top-btn" id="btnRules" <a href="#rules">RULES</button> -->
+          <div><button class="btn btn-primary" id="btnNew"><a href="index.html">NEW GAME</a></button></div>
+            <img src="imgs/dice-4.png" alt="">
+          <div><button onclick="rollDice();" class="btn btn-primary" id="btnRoll">ROLL DICE</button></div>
+          <div><button onclick="holdDice()" class="btn btn-primary" id="btnHold">HOLD</button></div>
+
+        </div>
       </div>
-
-      <div class="col-md-6" id="rightSide">
-        <P>PLAYER 2</p>
-        <div id="totalPoints" id="lSidePoints">TOTAL POINTS</div>
-        <div id="btnScore" id="lSide">CURRENT SCORE</div>
-      </div>
-
-      <div class="mid" id="mid">
-        <button class="btn btn-primary top-btn" id="btnRules" <a href="#rules">RULES</button>
-        <div><button class="btn btn-primary" id="btnNew" <a href="index.html">NEW GAME</button></div>
-          <img src="imgs/dice-4.png" alt="">
-        <div><button class="btn btn-primary" id="btnRoll" <a href="">ROLL DICE</button></div>
-        <div><button class="btn btn-primary" id="btnHold" <a href="">HOLD</button></div>
-
-
-      </div>
-
-      <div id="rules">
-        <h3>GAMEPLAY RULES</h3>
-          <P>Each turn, a player repeatedly rolls a dieuntil either a 1 is rolled or the player decides to "hold":</P>
-            <ul>
-              <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-              <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-              <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-            </ul>
-          <p>The first player to score 100 or more points wins.</p>
-      </div>
-
-
-
-
 
     </div>
   </div>
