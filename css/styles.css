@@ -1,11 +1,12 @@
 body{
   font-family: 'Aleo', serif;
+  background-color: #70163c;
 }
 #leftSide{
   background-color: #e6f2ff;
   height: 500px;
   margin-top: 100px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   text-align: center;
 }
@@ -13,13 +14,13 @@ body{
   background-color: #e6fff7;
   height:500px;
   margin-top: 100px;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   text-align: center;
 }
-#rules{
+/*#rules{
   display: none;
-}
+}*/
 
 .mid {
   display: inline-block;
@@ -41,17 +42,51 @@ body{
   margin-top: 85px;
 }
 
-#btnScore {
+#btnScore-1, #btnScore-2 {
   position: absolute;
   top: 400px;
-  left: 200px;
+  left: 250px;
+  background-color: #f5f5f5;
+  width: 80px;
 }
 #btnHold {
   margin-bottom: 5px;
 }
 #btnRules {
-  margin-top: 55px;
+  margin-top: 53px;
 }
-#leftSide p, #rightSide p {
+#player-1, #player-2 {
   padding-top: 50px;
+  font-size: 30px;
+}
+
+#rightRule{
+  background-color: #e6f2ff;
+  height: 700px;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 300px;
+}
+
+#leftRule{
+  background-color: #e6fff7;
+  height:700px;
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 50px;
+}
+#btnPlay{
+  position: absolute;
+  top: 600px;
+  left:225px;
+  color: Black;
+  font-size: 25px;
+
+}
+#btnRule{
+  color: Black;
 }
