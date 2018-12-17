@@ -1,83 +1,59 @@
-// function rollDice = (rollDice(){
-//
-//   // var rSide = document.getElementById('rSide');
-//   // var lSide = document.getElementById('lSide');
-//   // var totalPoints = document.getElementById('rSidePoints');
-//   // var totalPoints = document.getElementById('lSidePoints');
-// //   var die = [];
-// //    die = math.ceil(math.random() * 6 );
-// //   // var die2 = math.ceil(math.random() * 6 );
-// //   // var totalRight = die1
-// //   // var totalLeft = die2
-// //   // die1.innerHTML = die1;
-// //   // die2.innerHTML = die2;
-// //   // totalpoints.innerHTML = totalLeft + ".";
-// //   // totalpoints.innerHTML = totalRight + ".";
-// // document.getElementById('btnRoll').html = die
-// // });
-// // function holdDice() {
-// //   var hold =
-//
-// var die, players, roll, score, points;
-// die = math.ceil(math.random() * 6 );
-// player = ["player1", "player2"];
-// score = (die++);
-// points = (score++);
-// });
+var player1= playerOne;
+var player2= playerTwo;
 
-$(function(){
-    var score, totalPoints, activePlayer,PlayGame;
+ var  throwDice =function(){
+   var random =Math.floor((Math.random()*6)+1);
+   return(random);
+ }
+  function player(turn) {
+    this.roll = 0;
+    this.currentScore = 0;
+    this.totalPoints = 0;
+    this.turn = turn;
 
-init();
-// initialize functions using init();
+    // this.playername;
+  }
 
-$('.rollDice').click(function() {
-    if(playGame) {
-      var dice = Math.ceil(Math.random()*6);
+/*Create If statement to check the current player
+Ensure that its player one turn every time the game starts
+Disable player 2 controls
+*/
+player.prototype.currentPlayer =function(){
+  if (playerOne=true){
+    this.turn= turn;
+  }else{
+    playerTwo=true;
+  }
+}
+  player.prototype.rollOne =function(){
+    if (this.roll===1){
+      this.currentScore = 0;
+    alert("Sorry you rolled 1.")
+    //When roll is 1 disable player1 controls and activate player 2
+  }else {
+    this.currentScore += this.roll;
+  }
+  }
 
-   $('.dice').attr('src','imgs/dice-' + dice + '.png');
+  player.prototype.hold = function (){
+    this.totalPoints += this.currentScore;
+    this.currentScore = 0;
+    alert("Next Players turn")
+  }
 
-   if (dice !== 1) {
-       totalPoints += dice;
-       $('#btnScore-' + activePlayer).text(totalPoints);
-   } else {
-       //otherPlayer i.e player-2
-       nextPlayer();
-   }
+  player.prototype.winner = function(){
+    if(this.totalPoints >=20){
+      alert( "You Won!!");
     }
+  }
 
-});
+  // var images =
 
-$('.holdDice').click(function(){
-    if(playGame){
-        score[activePlayer] += totalPoints;
 
-        $('#score-' + activePlayer).text(score[activePlayer]);
+  $(document).ready (function(){
 
-        // Check 4 winner
-        if (score[activePlayer] >= 100) {
-            $('#player-' + activePlayer).text('Winner!!');
+    $("#btnRoll").click(function(rollDice){
+;
+    });
 
-            playGame = false;
-        }else{
-            nextPlayer();
-        }
-    }
-});
-
-function nextPlayer(){
-    if(activePlayer === 0) {
-        activePlayer = 1;
-    } else {
-        activePlayer = 0;
-    };
-    totalPoints = 0;
-    $('#score-1').text('0');
-    $('#score-2').text('0');
-
-    $('#player-1').toggleClass('active');
-    $('#player-2').toggleClass('active');
-
-  };
-
-});
+)};
