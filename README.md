@@ -42,14 +42,14 @@ Basic Git knowledge, including an installed version of Git.
   ## Behavior Driven Development
 
   #### Website Specifications
-|     INPUT                                  |      OUTPUT
-|--------------------------------------------|-------------------------------------------------------|
-|| |
-|| |
-|||
-||||
+|INPUT          |      OUTPUT|
+|-----------------------------|
+|Click on roll button |Get the temporary score|
+|Click on hold button	View your total score|Takes you to next User|
+|Click on new game button|Start a new game|
+|Click on rules button| Takes you to rules page|
 
-  ----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
 ## Known Bugs
 
