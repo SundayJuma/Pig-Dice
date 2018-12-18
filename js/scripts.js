@@ -1,9 +1,9 @@
 var player1 = playerOne;
 var player2 = playerTwo;
 
-var throwDice = function() {
+function throwDice() {
   var random = Math.floor((Math.random() * 6) + 1);
-  return (random);
+  document.getElementById("btnRoll1, btnRoll2").innerHTML = random;
 }
 
 function player(turn) {
@@ -21,7 +21,6 @@ Disable player 2 controls
 */
 player.prototype.currentPlayer = function() {
   if (playerOne = true) {
-    this.turn = turn;
   } else {
     playerTwo = true;
   }
@@ -53,7 +52,9 @@ player.prototype.winner = function() {
 
 $(document).ready(function() {
 
-    $("#btnRoll").click(function(rollDice) {;
+    $("#btnRoll1").click(function(rollDice() {
+
+      $(random)("")
     });
 
   )
