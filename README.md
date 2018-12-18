@@ -44,7 +44,7 @@ Basic Git knowledge, including an installed version of Git.
   #### Website Specifications
 
   |INPUT|OUTPUT|
-  |------------|
+  |-------------|
   |Click on roll button|Player 1 gets temporary score|
   |Click on hold button	|View your total score and then it is player 2 turn|
   |Roll a 1 | Temporary score becomes zero and its next players turn|
