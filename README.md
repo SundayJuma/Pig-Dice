@@ -1,5 +1,5 @@
 # Pig Dice Project
-
+![Web](imgs/dice-6.png)
 ## Description
 
 The goal of this project is to write a program where two users can play Pig dice against each other.This project is intended to exercise my JavaScript programming skills with constructors, prototypes, objects, properties, methods, jQuery and DOM manipulation and traversal.
