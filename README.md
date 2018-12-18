@@ -42,12 +42,16 @@ Basic Git knowledge, including an installed version of Git.
   ## Behavior Driven Development
 
   #### Website Specifications
-|INPUT          |      OUTPUT|
-|-----------------------------|
-|Click on roll button |Get the temporary score|
-|Click on hold button	View your total score|Takes you to next User|
-|Click on new game button|Start a new game|
-|Click on rules button| Takes you to rules page|
+
+  |INPUT|OUTPUT|
+  |------------|
+  |Click on roll button|Player 1 gets temporary score|
+  |Click on hold button	|View your total score and then it is player 2 turn|
+  |Roll a 1 | Temporary score becomes zero and its next players turn|
+  |Click on New Game| Game refreshes and starts|
+  |Click on the rules page| Opens rules page|
+
+
 
 --------------------------------------------------------------------------------------------------
 
